@@ -19,3 +19,10 @@ let logDet: (obj: {name: string, age: number}) => void;
 logDet = (promise: {name: string, age: number}) => {
     console.log(`${promise.name} is ${promise.age} years old`);
 }
+
+function paddingLeft(padding: number | string, input: string) : string {
+    if (typeof padding === "number") {
+        return " ".repeat(padding) + input;
+    } 
+    return padding + input;
+}
